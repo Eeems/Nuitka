@@ -2,7 +2,7 @@
 # yamllint disable rule:indentation
 # yamllint disable rule:comments-indentation
 # too many spelling things, spell-checker: disable
-# checksum: 641c7639294ba1725bb05dd53940874c
+# checksum: b437ae11d09dfd4d93149313bb490a14
 ---
 - module-name: '_dbus_glib_bindings'
   implicit-imports:
@@ -641,6 +641,10 @@
         'comtypes': 'ignore'
 
 - module-name: 'curl_cffi'
+  data-files:
+    patterns:
+      - 'cacert.pem'
+
   implicit-imports:
     - depends:
         - '_cffi_backend'
